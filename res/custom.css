@@ -1,0 +1,56 @@
+.table {
+    font-size: 24px;
+}
+
+.table th, .table td {
+    padding: 8px 15px;
+}
+
+#quiz-container {
+    margin-top: 80px;
+    width: 90%;
+    max-width: 1600px;
+}
+
+#controls-container {
+    display: none;
+    margin: 20px 0;
+}
+
+.edit-controls {
+    margin: 10px 0;
+}
+
+.table tr.medal-gold {
+    background-color: #FFD700 !important;
+    --bs-table-bg: #FFD700;
+}
+
+.table tr.medal-silver {
+    background-color: #C0C0C0 !important;
+    --bs-table-bg: #C0C0C0;
+}
+
+.table tr.medal-bronze {
+    background-color: #CD7F32 !important;
+    --bs-table-bg: #CD7F32;
+}
+
+/* Styles from script.js templates */
+.team-name-cell {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.medal-emoji {
+    position: absolute;
+    left: 0;
+    font-size: 32px;
+    line-height: 1;
+}
+
+.team-name {
+    flex: 1;
+    text-align: center;
+}

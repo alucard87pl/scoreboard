@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Tabela</title>
+    <link href="./res/bootstrap.min.css" rel="stylesheet">
+    <link href="./res/custom.css" rel="stylesheet">
+</head>
+<body>
+    <script defer src="./config.js"></script>
+    <button id="sidebarToggle" class="btn btn-dark position-fixed top-0 end-0 m-2" style="z-index: 1100">
+        ⚙️
+    </button>
+
+    <div id="sidebar" class="position-fixed top-0 end-0 h-100 bg-dark text-light p-3" style="width: 300px; transform: translateX(100%); transition: transform 0.3s; z-index: 1000">
+        <div class="d-flex flex-column h-100">
+            <div class="mb-4">
+                <h5>Ustawienia</h5>
+                <div class="d-flex flex-column gap-2">
+                    <button id="addTeamButton" class="btn btn-success btn-sm">Dodaj drużynę</button>
+                    <button id="clearDataButton" class="btn btn-warning btn-sm">Wyczyść dane</button>
+                    <button id="exportButton" class="btn btn-info btn-sm">Eksport CSV</button>
+                    <button id="nukeButton" class="btn btn-danger btn-sm">nuke LS</button>
+                </div>
+            </div>
+              <div class="mb-4">
+                  <h5>Data Quizu</h5>
+                  <div class="input-group input-group-sm mb-2">
+                      <input type="date" class="form-control" id="dateInput">
+                  </div>
+              </div>
+            <div class="mb-4">
+                <h5>Dogrywka</h5>
+                <div class="input-group input-group-sm mb-2">
+                    <div class="input-group-text">
+                        <input class="form-check-input mt-0" type="checkbox" id="luckyLoserToggle">
+                    </div>
+                    <input type="number" class="form-control" id="luckyLoserTarget">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="position-fixed w-100 bg-white" style="top: 0; z-index: 900">
+        <img src="res/branding.png" style="position: absolute; top: 10px; left: 10px;">
+        <h1 class="text-center mt-2" id="quiz-branding"></h1>
+        <h2 class="text-center"><span id="quiz-location"></span> - <span id="quiz-date"></span></h2>
+        <h3 class="text-center" id="quiz-host"></h3>
+    </div>
+    <div class="container-fluid min-vh-100 d-flex flex-column justify-content-center align-items-center">
+        <div id="quiz-container" class="text-center" style="margin-top: 120px">
+                <table class="table table-bordered">
+                <thead class="table-dark">
+                    <tr id="quiz-table-header">
+                    </tr>
+                </thead>
+                <tbody id="quiz-table-body">
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="./res/bootstrap.bundle.min.css"></script>
+    <script src="./res/script.js"></script>
+    <script src="./res/debug.js"></script>
+</body>
