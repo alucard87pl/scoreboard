@@ -28,11 +28,14 @@ quiz_tabela/
 ├── res/
 │   └── branding.png
 └── README.md
+└── LICENSE.md
 ```
 
 ## Usage
 
 Simply open `index.html` in any modern web browser to start using the quiz application.
+
+Developed and tested on Chrome `135.0.7049.115 x64 Stable`
 
 Press `F11` to go fullscreen.
 
